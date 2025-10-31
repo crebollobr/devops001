@@ -74,7 +74,6 @@ Com isso, no mesmo servidor físico, você poderia ter:
 
 Com certeza. Dando sequência lógica ao texto, partindo da "desvantagem" da VM, apresentamos a solução seguinte.
 
----
 
 ## 6. A Evolução: Containers
 
