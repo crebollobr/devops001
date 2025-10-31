@@ -35,7 +35,7 @@ Vamos descartar as analogias e continuar o texto no mesmo nível técnico e clar
 
 O seu texto parou exatamente no ponto em que precisamos justificar a próxima tecnologia. Aqui está a continuação lógica, mantendo o seu estilo.
 
-### 4. O Desafio: Eficiência e Isolamento
+## 4. O Desafio: Eficiência e Isolamento
 
 O modelo que vimos (um Hardware -> um SO -> vários Apps) funcionou por muito tempo. No entanto, em ambientes de servidores (computadores potentes que rodam serviços para empresas), esse modelo apresentava três problemas sérios:
 
@@ -76,7 +76,7 @@ Com certeza. Dando sequência lógica ao texto, partindo da "desvantagem" da VM,
 
 ---
 
-### 6. A Evolução: Containers
+## 6. A Evolução: Containers
 
 As Máquinas Virtuais (VMs) resolveram o problema do isolamento, mas trouxeram o problema do **desperdício de recursos**. O fato de cada VM precisar de um Sistema Operacional (SO) completo era pesado, lento para iniciar e consumia muita memória RAM e disco.
 
@@ -103,9 +103,7 @@ Isso significa que um container é, essencialmente, apenas um processo (ou um gr
 * 👍 **Vantagem (Eficiência):** Na mesma máquina que rodaria 5 ou 10 VMs, você pode rodar centenas de containers, aproveitando ao máximo o hardware.
 * 👎 **Desvantagem (Isolamento Compartilhado):** O isolamento é muito bom, mas não é tão *blindado* quanto o de uma VM. Como todos os containers compartilham o mesmo núcleo (Kernel) do SO, uma falha grave (e rara) nesse núcleo poderia, teoricamente, afetar todos eles.
 
----
-
-### 7. Docker: O Popularizador dos Containers
+## 7. Docker: O Popularizador dos Containers
 
 A tecnologia de containers (como os "jails" do FreeBSD ou o LXC do Linux) já existia há algum tempo, mas era muito complexa de usar.
 
@@ -120,7 +118,7 @@ O Docker resolveu o problema de empacotamento com dois conceitos principais:
 
 O Docker tornou o processo de "empacotar" um software e garantir que ele "rode em qualquer lugar" (no notebook do dev, no servidor de testes, na produção) uma realidade simples.
 
-### 8. O Próximo Nível: Kubernetes (K8s)
+## 8. O Próximo Nível: Kubernetes (K8s)
 
 O Docker e os containers resolveram o problema de *empacotar e rodar um app*. Mas isso criou um novo desafio: **o gerenciamento em escala**.
 
