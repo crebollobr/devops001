@@ -35,8 +35,6 @@ Vamos descartar as analogias e continuar o texto no mesmo nível técnico e clar
 
 O seu texto parou exatamente no ponto em que precisamos justificar a próxima tecnologia. Aqui está a continuação lógica, mantendo o seu estilo.
 
----
-
 ### 4. O Desafio: Eficiência e Isolamento
 
 O modelo que vimos (um Hardware -> um SO -> vários Apps) funcionou por muito tempo. No entanto, em ambientes de servidores (computadores potentes que rodam serviços para empresas), esse modelo apresentava três problemas sérios:
@@ -121,8 +119,6 @@ O Docker resolveu o problema de empacotamento com dois conceitos principais:
 2.  **Container:** É a *instância em execução* de uma Imagem. Você pode usar a mesma "Imagem" para criar quantos "Containers" idênticos você precisar.
 
 O Docker tornou o processo de "empacotar" um software e garantir que ele "rode em qualquer lugar" (no notebook do dev, no servidor de testes, na produção) uma realidade simples.
-
----
 
 ### 8. O Próximo Nível: Kubernetes (K8s)
 
