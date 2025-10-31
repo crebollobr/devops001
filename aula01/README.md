@@ -98,9 +98,9 @@ Isso significa que um container é, essencialmente, apenas um processo (ou um gr
 
 ### Vantagens e Desvantagens (Por Cima)
 
-* 👍 **Vantagem (Leveza e Rapidez):** Por não terem um SO Convidado, containers são minúsculos (Megabytes, não Gigabytes). Eles iniciam em *segundos* (ou até menos), pois não há um "boot" de sistema.
-* 👍 **Vantagem (Eficiência):** Na mesma máquina que rodaria 5 ou 10 VMs, você pode rodar centenas de containers, aproveitando ao máximo o hardware.
-* 👎 **Desvantagem (Isolamento Compartilhado):** O isolamento é muito bom, mas não é tão *blindado* quanto o de uma VM. Como todos os containers compartilham o mesmo núcleo (Kernel) do SO, uma falha grave (e rara) nesse núcleo poderia, teoricamente, afetar todos eles.
+* **Vantagem (Leveza e Rapidez):** Por não terem um SO Convidado, containers são minúsculos (Megabytes, não Gigabytes). Eles iniciam em *segundos* (ou até menos), pois não há um "boot" de sistema.
+* **Vantagem (Eficiência):** Na mesma máquina que rodaria 5 ou 10 VMs, você pode rodar centenas de containers, aproveitando ao máximo o hardware.
+* **Desvantagem (Isolamento Compartilhado):** O isolamento é muito bom, mas não é tão *blindado* quanto o de uma VM. Como todos os containers compartilham o mesmo núcleo (Kernel) do SO, uma falha grave (e rara) nesse núcleo poderia, teoricamente, afetar todos eles.
 
 ## 7. Docker: O Popularizador dos Containers
 
