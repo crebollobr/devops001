@@ -2,8 +2,6 @@
 
 **Objetivo:** Olá! Esta não é uma prova e não vale nota. O objetivo é apenas entender o que você já conhece sobre alguns conceitos básicos de tecnologia. Suas respostas me ajudarão a adaptar o ritmo da aula para o conhecimento da turma. Por favor, responda com suas próprias palavras, da forma mais simples que puder.
 
----
-
 #### Bloco 1: Sistema Operacional (SO)
 
 1.  **O que você entende por "Sistema Operacional"?**
