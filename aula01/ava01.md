@@ -32,6 +32,3 @@
 3.  **Você já ouviu falar de AWS (Amazon Web Services), Microsoft Azure ou Google Cloud (GCP)?**
     *(Apenas "Sim" ou "Não" já ajuda.)*
 
----
-
-Gostaria que eu criasse um "gabarito" para você (o instrutor), detalhando o que esperar de respostas "Básicas", "Intermediárias" e "Avançadas" para cada uma dessas perguntas?
