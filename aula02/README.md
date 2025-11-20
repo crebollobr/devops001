@@ -1,9 +1,3 @@
-Aqui está uma proposta de roteiro e texto didático para a **Aula 02**, estruturado para ser lido como uma apostila ou usado como base para sua apresentação.
-
-O objetivo aqui é desmistificar o Sistema Operacional (SO) e justificar a escolha do Linux como a ferramenta principal do curso.
-
----
-
 # Aula 02: Teoria de Sistemas Operacionais
 
 ## 1. O que é um Sistema Operacional?
@@ -66,7 +60,7 @@ Aqui estão os 5 pilares do porquê o Linux é o rei do DevOps:
 5.  **Nativismo Cloud e Containers:**
     Tecnologias como **Docker** e **Kubernetes** não foram apenas "criadas para Linux"; elas foram criadas **usando recursos internos do Kernel do Linux** (Cgroups e Namespaces). Rodar Docker no Linux é nativo e performático. Rodar em outros sistemas exige camadas de virtualização.
 
----
+
 
 ### Conclusão da Teoria
 Para ser um profissional de DevOps, o Linux não é opcional. Ele é a "língua oficial" da infraestrutura mundial. Nos próximos módulos, vamos parar de falar sobre ele e começar a instalar e configurar na prática.
