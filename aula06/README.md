@@ -104,11 +104,7 @@ scp [O QUE EU QUERO COPIAR] [PARA ONDE VAI]
       * Volte para o terminal do SSH (na nuvem) e verifique se o arquivo chegou:
         `ls -la` e `cat teste.txt`
 
------
 
-### Dica para o Instrutor (Sobre a Nuvem):
-
-Como você ainda não definiu a nuvem, aqui vão sugestões rápidas para "1 VM por aluno":
 
   * **AWS (EC2):** Crie uma conta, suba as instâncias t2.micro (Free Tier) ou t3.nano. Vai precisar gerenciar as chaves `.pem` (o que complica um pouco o comando SSH para `ssh -i chave.pem user@ip`).
   * **DigitalOcean / Linode / Hetzner:** Mais simples. Cria com senha de root ou usuário padrão, e o acesso é direto com senha, facilitando a didática para iniciantes que podem se atrapalhar com chaves RSA agora.
