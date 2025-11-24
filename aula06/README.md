@@ -105,7 +105,3 @@ scp [O QUE EU QUERO COPIAR] [PARA ONDE VAI]
         `ls -la` e `cat teste.txt`
 
 
-
-  * **AWS (EC2):** Crie uma conta, suba as instâncias t2.micro (Free Tier) ou t3.nano. Vai precisar gerenciar as chaves `.pem` (o que complica um pouco o comando SSH para `ssh -i chave.pem user@ip`).
-  * **DigitalOcean / Linode / Hetzner:** Mais simples. Cria com senha de root ou usuário padrão, e o acesso é direto com senha, facilitando a didática para iniciantes que podem se atrapalhar com chaves RSA agora.
-  * **Laboratório Local:** Se a nuvem falhar, você pode usar as VMs do VirtualBox em modo "Bridge" (se todos estiverem na mesma rede Wi-Fi) para simular acesso remoto entre colegas.
