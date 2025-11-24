@@ -152,7 +152,7 @@ Aqui está o módulo detalhado para inserir na aula:
 
 -----
 
-## 3\. Guia de Sobrevivência: Os Comandos Essenciais
+#  Guia de Sobrevivência: Os Comandos Essenciais
 
 Agora que você está na "tela preta", o mouse não funciona para abrir pastas. Você precisa digitar ordens. Vamos aprender os 7 comandos que você usará 90% do tempo.
 
