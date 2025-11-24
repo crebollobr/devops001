@@ -1,17 +1,3 @@
-Entendi. Peço desculpas pela fragmentação. Como fomos construindo em etapas, o conteúdo acabou ficando desconexo.
-
-Abaixo, organizei **todo o conteúdo da Aula 06 em um único documento unificado**, com uma sequência lógica de aprendizado:
-
-1.  **Conexão** (Entrando no servidor)
-2.  **Reconhecimento** (Onde estou? Estrutura de pastas)
-3.  **Sobrevivência** (Navegar e editar arquivos)
-4.  **Administração** (Sudo e variáveis)
-5.  **Transferência** (Levando arquivos do PC para o servidor)
-
-Aqui está a aula completa e fluida:
-
------
-
 # Aula 06: Ambiente Cloud, Acesso Remoto e Sobrevivência Linux
 
 ## 1\. O Novo Cenário: Infraestrutura na Nuvem
