@@ -232,3 +232,94 @@ Agora que você está na "tela preta", o mouse não funciona para abrir pastas. 
 | **Mover/Renomear** | `mv` | `mv index.html /var/www/` |
 | **Apagar** | `rm` | `rm lixo.txt` |
 
+
+
+# O Editor de Texto `nano`
+
+No mundo gráfico, usamos VS Code ou Bloco de Notas. No servidor (tela preta), precisamos de editores de texto baseados em terminal. Existem vários (Vim, Emacs), mas o **Nano** é o mais amigável para começar.
+
+### 1\. A Interface do Nano
+
+Diferente do Vim (que é modal e complexo), o Nano funciona como um editor comum: você abre e já pode sair digitando.
+
+A tela é dividida em 3 partes:
+
+1.  **Topo:** Mostra a versão do nano e o nome do arquivo que você está editando.
+2.  **Centro:** A área de texto onde você escreve.
+3.  **Rodapé (Muito Importante):** A "cola" dos comandos. Ele mostra os atalhos para salvar, sair, buscar, etc.
+
+### 2\. O Segredo do "Chapeuzinho" (`^`)
+
+Olhando para o rodapé do nano, você verá símbolos como `^G` ou `^X`.
+
+  * O símbolo **`^`** representa a tecla **CTRL** (Control).
+  * Portanto, **`^X`** significa: Pressione **CTRL** e **X** ao mesmo tempo.
+
+-----
+
+### 3\. Ciclo de Vida: Abrir, Editar, Salvar e Sair
+
+Este é o procedimento padrão que você fará 1000 vezes na carreira.
+
+#### Passo 1: Abrir ou Criar
+
+```bash
+nano meuarquivo.txt
+```
+
+*Se o arquivo existir, ele abre. Se não existir, ele cria um novo na memória.*
+
+#### Passo 2: Editar
+
+Apenas digite. As setas do teclado movem o cursor. O mouse não funciona para clicar no texto (em terminais puros).
+
+#### Passo 3: Salvar (Write Out)
+
+O comando técnico é "Write Out" (Escrever para fora).
+
+1.  Pressione **`Ctrl + O`**.
+2.  O nano perguntará: *"File Name to Write: meuarquivo.txt"* (Confirmar nome?).
+3.  Pressione **`Enter`**.
+      * *Note que apareceu "Wrote X lines" no centro da tela.*
+
+#### Passo 4: Sair (Exit)
+
+1.  Pressione **`Ctrl + X`**.
+      * *Se você salvou antes:* Ele fecha e volta pro terminal.
+      * *Se você NÃO salvou:* Ele perguntará *"Save modified buffer?"*. Digite **`Y`** (Yes/Sim) e depois **`Enter`** para confirmar o nome.
+
+-----
+
+### 4\. Atalhos Úteis (Cheat Sheet)
+
+Além de salvar e sair, o nano tem ferramentas poderosas:
+
+| Atalho | Nome | O que faz? |
+| :--- | :--- | :--- |
+| **`Ctrl + W`** | **W**here Is | **Pesquisar.** Digite a palavra e dê Enter. (Use `Alt + W` para buscar a próxima ocorrência). |
+| **`Ctrl + K`** | Cu**t** Text | **Recortar.** Apaga a linha inteira onde o cursor está. (Muito usado para deletar linhas rápidas). |
+| **`Ctrl + U`** | **U**ncut Text | **Colar.** Cola a linha que você acabou de recortar com o `Ctrl + K`. |
+| **`Ctrl + _`** | Go To Line | **Ir para linha.** Digite o número da linha (útil quando o log de erro diz "Erro na linha 54"). |
+| **`Ctrl + C`** | Cur Pos | Mostra em qual linha e coluna o cursor está agora. |
+
+-----
+
+### 5\. Nano vs. Vim (Curiosidade para o aluno)
+
+Provavelmente alguém vai perguntar: *"E o tal do Vim? É melhor?"*
+
+  * **Nano:** É como uma bicicleta com rodinhas. Fácil de pegar e sair andando. É o ideal para edições rápidas de configuração.
+  * **Vim:** É como um jato de caça. Extremamente poderoso, faz coisas incríveis com poucos toques, mas se você não souber pilotar, nem consegue sair do chão (ou sair do editor\!).
+      * *Veredito:* Começamos com Nano. Quando você se sentir um "Jedi" do Linux, aprenda o básico de Vim.
+
+-----
+
+### Exercício Prático Sugerido
+
+1.  Crie um arquivo: `nano lab_nano.txt`
+2.  Escreva 3 linhas com nomes de frutas.
+3.  Salve o arquivo (`Ctrl+O`, `Enter`).
+4.  Saia do arquivo (`Ctrl+X`).
+5.  Abra novamente.
+6.  Use o `Ctrl+K` para apagar a segunda fruta.
+7.  Saia e Salve usando o atalho rápido: `Ctrl+X`, `Y`, `Enter`.
