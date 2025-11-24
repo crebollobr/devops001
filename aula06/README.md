@@ -1,3 +1,17 @@
+Entendi. Peço desculpas pela fragmentação. Como fomos construindo em etapas, o conteúdo acabou ficando desconexo.
+
+Abaixo, organizei **todo o conteúdo da Aula 06 em um único documento unificado**, com uma sequência lógica de aprendizado:
+
+1.  **Conexão** (Entrando no servidor)
+2.  **Reconhecimento** (Onde estou? Estrutura de pastas)
+3.  **Sobrevivência** (Navegar e editar arquivos)
+4.  **Administração** (Sudo e variáveis)
+5.  **Transferência** (Levando arquivos do PC para o servidor)
+
+Aqui está a aula completa e fluida:
+
+-----
+
 # Aula 06: Ambiente Cloud, Acesso Remoto e Sobrevivência Linux
 
 ## 1\. O Novo Cenário: Infraestrutura na Nuvem
@@ -129,12 +143,106 @@ scp meu_arquivo.txt usuario@ip_do_servidor:/home/usuario/
 
 -----
 
-## 9\. Prática da Aula: "Hello Cloud"
 
-1.  Conecte-se à sua VM na nuvem via SSH.
-2.  Use `pwd` para confirmar que está na sua `/home`.
-3.  Vá até a raiz (`cd /`) e tente criar um arquivo (`touch teste.txt`). **Observe o erro de permissão.**
-4.  Volte para casa (`cd ~`).
-5.  Crie um arquivo chamado `lab06.txt` usando o `nano`. Escreva seu nome dentro.
-6.  Instale o pacote `neofetch` usando `sudo apt install neofetch`.
-7.  **(Desafio)**: No terminal do seu computador local, crie um arquivo e envie para a nuvem via `scp`.
+Você tem total razão. Na tentativa de unificar o conteúdo, a explicação detalhada do "bê-a-bá" dos comandos acabou ficando superficial. Para um aluno que está entrando no terminal pela primeira vez, esses comandos precisam ser explicados com calma e exemplos.
+
+Vou reescrever a seção de **"Sobrevivência no Terminal"** da Aula 06, focando especificamente nessa lista essencial (`pwd`, `ls`, `cd`, `cp`, `mv`, `rm`, `mkdir`, `touch`).
+
+Aqui está o módulo detalhado para inserir na aula:
+
+-----
+
+## 3\. Guia de Sobrevivência: Os Comandos Essenciais
+
+Agora que você está na "tela preta", o mouse não funciona para abrir pastas. Você precisa digitar ordens. Vamos aprender os 7 comandos que você usará 90% do tempo.
+
+### A. Localização e Navegação ("Onde estou?")
+
+**1. `pwd` (Print Working Directory)**
+
+  * **O que faz:** É o seu **GPS**. Mostra o caminho completo da pasta onde você está pisando agora.
+  * **Exemplo:**
+    ```bash
+    pwd
+    # Saída: /home/aluno
+    ```
+
+**2. `ls` (List)**
+
+  * **O que faz:** São seus **olhos**. Mostra o que tem dentro da pasta atual.
+  * **Variações importantes:**
+      * `ls`: Lista simples.
+      * `ls -l`: Lista com **detalhes** (mostra quem é o dono, tamanho e data).
+      * `ls -a`: Mostra arquivos **ocultos** (no Linux, arquivos que começam com ponto `.` são invisíveis).
+      * `ls -la`: Combina tudo (detalhes + ocultos).
+
+**3. `cd` (Change Directory)**
+
+  * **O que faz:** É o **teletransporte**. Move você de uma pasta para outra.
+  * **Comandos Mágicos:**
+      * `cd Downloads`: Entra na pasta Downloads.
+      * `cd ..`: **Volta** um nível (sai da pasta atual).
+      * `cd ~`: Vai direto para sua **Casa** (/home/usuario), não importa onde você esteja.
+      * `cd /`: Vai para a **Raiz** do sistema (o início de tudo).
+
+-----
+
+### B. Manipulação de Arquivos ("Criar e Destruir")
+
+**4. `mkdir` (Make Directory)**
+
+  * **O que faz:** Cria uma nova pasta (diretório).
+  * **Exemplo:**
+    ```bash
+    mkdir Projetos
+    ```
+
+**5. `touch`**
+
+  * **O que faz:** Originalmente serve para mudar a data de um arquivo, mas usamos para **criar arquivos vazios** instantaneamente.
+  * **Exemplo:**
+    ```bash
+    touch teste.txt
+    # Agora existe um arquivo vazio chamado teste.txt
+    ```
+
+**6. `cp` (Copy)**
+
+  * **O que faz:** O famoso CTRL+C / CTRL+V. Clona um arquivo.
+  * **Sintaxe:** `cp [ORIGEM] [DESTINO]`
+  * **Exemplos:**
+      * `cp arquivo.txt copia.txt` (Cria uma cópia com outro nome).
+      * `cp arquivo.txt /tmp/` (Copia o arquivo para a pasta /tmp).
+      * **Atenção:** Para copiar pastas inteiras, use `cp -r` (recursivo).
+
+**7. `mv` (Move)**
+
+  * **O que faz:** Serve para duas coisas: **Mover** (Recortar) ou **Renomear**.
+  * **Exemplos:**
+      * **Mover:** `mv arquivo.txt Documentos/` (Joga o arquivo dentro da pasta Documentos).
+      * **Renomear:** `mv arquivo_velho.txt arquivo_novo.txt` (Muda o nome do arquivo, pois você "moveu" ele para o mesmo lugar com outro nome).
+
+**8. `rm` (Remove) - CUIDADO\!**
+
+  * **O que faz:** Apaga arquivos.
+  * **Aviso:** **Não existe lixeira no terminal.** Apagou, já era.
+  * **Exemplos:**
+      * `rm arquivo.txt`: Apaga um arquivo.
+      * `rm -r pasta`: Apaga uma pasta e tudo que tem dentro dela.
+
+-----
+
+### Resumo Visual (Tabela Rápida)
+
+| Ação | Comando | Exemplo |
+| :--- | :--- | :--- |
+| **Onde estou?** | `pwd` | `pwd` |
+| **O que tem aqui?** | `ls` | `ls -la` |
+| **Entrar na pasta** | `cd` | `cd Documentos` |
+| **Voltar uma pasta** | `cd ..` | `cd ..` |
+| **Criar pasta** | `mkdir` | `mkdir Site` |
+| **Criar arquivo** | `touch` | `touch index.html` |
+| **Copiar** | `cp` | `cp index.html backup.html` |
+| **Mover/Renomear** | `mv` | `mv index.html /var/www/` |
+| **Apagar** | `rm` | `rm lixo.txt` |
+
